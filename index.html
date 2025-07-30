@@ -47,11 +47,34 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         z-index: 1000;
     }
+
+#google-maps-button {
+    position: absolute;
+    top: 200px; /*ajustar para que no choque con los otros elementos*/
+    right: 20px;
+    background-color: #4285F4;
+    color: rgb(235, 232, 213);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1000; /* Asegura que esté por encima del mapa */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+    }
+
+    #google-maps-button:hover {
+        background-color: #104396; /* Un azul ligeramente más oscuro al pasar el mouse */
+    }        
     </style>
 </head>
 <body>
     <div id="map-title"> Ruta SPYUC1-CUN1</div>
     <div id="map"></div>
+    <a href="https://www.google.com/maps/dir/Kanas%C3%ADn,+Yucat%C3%A1n/21.1453611,-86.87725/@20.9064649,-90.8620571,833075m/data=!3m2!1e3!4b1!4m9!4m8!1m5!1m1!1s0x8f567060d346483b:0x5eda99e1c0a2b4ac!2m2!1d-89.5639119!2d20.9441486!1m0!3e0!5m1!1e3?entry=ttu&g_ep=EgoyMDI1MDcyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="google-maps-button">
+        Ver en Google Maps
+    </a>
     <div id="map-legend" class="legend">
         <h4>Leyenda</h4>
         <div><span style="background-color: #d8180c; width: 20px; height: 20px; display: inline-block; border-radius: 50%;"></span> Nivel de riesgo de ruta (Alto)</div>
